@@ -43,12 +43,16 @@ __nonzero__(self): Xác định hành vi khi bool() được gọi trên một t
 __dir__(self): Phương thức này trả về danh sách các thuộc tính của một lớp.
 __sizeof__(self): Phương thức này trả về kích thước của đối tượng.
     Container methods: __len__, __getitem__, __setitem__, __contains__
+    (len: trả về dộ dài: ví dụ như anhhuy thì dộ dài là 6)
+    (getiem: lấy phần tử tại vị trí hoặc key ví dụ: obj[1],obj['key'])
+    (setitem: gán giá trị cho phần tử tại vị trí đó hoặc key)
+    (contains: check xem phẩn tử đó có trong object không)
+    Callable objects: __call__: cho object được gọi như một hàm : obj()
 
-    Callable objects: __call__
 
     Context managers: __enter__, __exit__
 
-    Attribute access: __getattr__, __setattr__, __delattr__
+    Attribute access: __getattr__, __setattr__, __delattr__ : get: truy cập thuộc tính , set : gán giá trị cho thuộc tính , del: xóa thuộc tính đó.
 
 
 # Comparison magic methods:
