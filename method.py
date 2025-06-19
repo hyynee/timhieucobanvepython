@@ -183,3 +183,29 @@ emp_2 = Employee('Nguyen', 'A', 60000, 25)
 print(emp_1 + emp_2)  # Output: 110000 (50000 + 60000)
 print(len(emp_1))  # Output: 8 (length of 'Anh Huy')
 
+
+class Pet:
+    species = "Unknown"  # class attribute
+    def __init__(self, name, age):
+        self.name = name          # instance attribute
+        self.age = age            # instance attribute
+
+    # 1. Instance method
+    def speak(self):
+        return f"{self.name} is {self.age} years old and says hello!"
+
+    # 2. Class method
+    @classmethod
+    def set_species(cls, species_name):
+        cls.species = species_name
+        return f"Species set to {cls.species}"
+
+    # 3. Static method
+    @staticmethod
+    def is_adult(age):
+        return age >= 2
+    
+meo = Pet("Mimi", 3)
+print(meo.speak())  
+print(Pet.set_species("Cat"))  
+print(Pet.is_adult(3))
