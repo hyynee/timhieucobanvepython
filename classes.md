@@ -10,3 +10,4 @@ ví dụ: class Person(models.Model):
          print("Hello my name is" + seft.name)
 # có thể tạo dc 1 đối tượng từ lớp đó
 p1 = Person("huy",21)
+
